@@ -143,4 +143,4 @@ def make_figure(quest, group):
     return px.bar(my_table, x=quest, y="size", color=group, labels={quest: 'Level of agreement', 'size':'Number of responses'})
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=True, port=8051, host='0.0.0.0')
